@@ -1,10 +1,17 @@
 #include "csapp.h"
 
-#define SERV_PORT 69
-
+#define SERV_PORT 1169
+#define BLOCK 512
 
 void dg_echo(int sockfd, SA * pcliaddr, socklen_t clilen)
 {
+	/* If (read)
+	   {
+		while(sendpacket !< BLOCK)
+		{
+			send ACK
+			
+	*/
 	int n;
 	socklen_t len;
 	char mesg[MAXLINE];
